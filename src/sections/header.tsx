@@ -10,7 +10,7 @@ export default function HeaderH() {
           <Image
             src="/avatar.jpg"
             alt="Portfolio avatar"
-            className="rounded-lg object-cover w-[104px] h-[104px]"
+            className="rounded-lg object-cover w-[154px] h-[154px]"
             width={264}
             height={264}
             priority
