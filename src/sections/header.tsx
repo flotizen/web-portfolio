@@ -16,7 +16,7 @@ export default function HeaderH() {
             priority
           />
           <p className="text-white text-[20px]">Nguyễn Quang Hiếu</p>
-          <div className="bg-[#2C2C2C] p-2 rounded-md text-white text-[14px]">
+          <div className="bg-[#2C2C2C] p-2 rounded-md text-white text-[14px] font-[600]">
             Software Engineer
           </div>
         </div>

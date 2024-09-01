@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+.slide-testimonial .swiper-pagination-progressbar-fill {
+  background: #ADA26E !important;
+  border-radius: 9999px;
+}
