@@ -56,7 +56,7 @@ export default function Testimonials() {
             <CardAvatar
               title="Avaso Software"
               avatar={{
-                url: 'https://www.avasosoft.com/assets/images/logo.png',
+                url: '/partner/avaso.png',
                 width: 66,
                 height: 66,
                 className: 'bg-white self-center p-2',
