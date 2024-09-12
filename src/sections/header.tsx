@@ -29,7 +29,7 @@ export default function HeaderH() {
             </div>
             <div>
               <p className="text-[#595959] text-[14px]">EMAIL</p>
-              <p className="text-white text-[16px]">hieu.nq701@gmail.com</p>
+              <p className="text-white text-[16px]">tech.hieunq71@gmail.com</p>
             </div>
           </div>
           <div className="flex flex-row gap-4">
