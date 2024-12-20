@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="flex min-h-screen flex-col items-center lg:items-start justify-start py-20 lg:p-24">
+        <main className="overflow-x-hidden flex min-h-screen flex-col items-center lg:items-start justify-start py-20 lg:p-24">
           <AppInfo />
-          <div className="flex flex-col w-full lg:flex-row gap-8 mt-4 mb-14 lg:mb-0">
+          <div className="flex flex-col lg:flex-row gap-8 mt-4 mb-14 lg:mb-0">
             <HeaderH />
             {children}
           </div>
