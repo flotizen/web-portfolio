@@ -1,15 +1,20 @@
-import Clients from '@/sections/about-me/clients';
 import Doings from '@/sections/about-me/doings';
-import Testimonials from '@/sections/about-me/testimonials';
-// import dynamic from 'next/dynamic';
+// import Testimonials from '@/sections/about-me/testimonials';
+import HeaderH from '@/sections/header';
+import Projects from '@/sections/about-me/projects';
+import dynamic from 'next/dynamic';
 
-// const Testimonials = dynamic(() => import('@/sections/about-me/testimonials'), { ssr: false })
+const Testimonials = dynamic(() => import('@/sections/about-me/testimonials'), {
+  ssr: false,
+  loading: ()=> <div className='h-[230px] w-full'></div>,
+});
 
 export default function Home() {
   return (
-    <>
+    <div className="w-full lg:grid lg:grid-cols-3 gap-8 mt-4 mb-14 lg:mb-0">
       {/* Body */}
-      <div className="bg-[#1E1E1E] gap-8 px-4 py-8 flex flex-col justify-start align-middle items-center lg:items-start rounded-md">
+      <HeaderH />
+      <div className="w-full lg:col-span-2 bg-[#1E1E1E] gap-8 px-4 py-8 flex flex-col justify-start align-middle items-center lg:items-start rounded-md">
         <div>
           <div className="m-2 flex flex-col justify-center align-middle items-center lg:items-start">
             <p className="text-white text-[30px] font-[600]">About Me</p>
@@ -32,9 +37,9 @@ export default function Home() {
         </div>
         <Doings />
         <Testimonials />
-        <Clients />
+        <Projects />
       </div>
       {/* End Body */}
-    </>
+    </div>
   );
 }

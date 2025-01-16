@@ -27,7 +27,7 @@ export const AvatarSpace = ({
   return (
     <>
       <div className={`${className}`}>
-        <Image src={avatar} alt="avatar-space" width={width} height={height} />
+        <Image src={avatar} alt="avatar-space" width={width} height={height} className={className}/>
       </div>
     </>
   );
